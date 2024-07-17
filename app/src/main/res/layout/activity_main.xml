@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/img_welcome"/>
+    <Button
+        android:id="@+id/btndaftar"
+        app:backgroundTint="@null"
+        android:text="Daftar"
+        android:layout_marginTop="500dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/btnlogin"
+        app:backgroundTint="@null"
+        android:text="Login"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btndaftar"
+        android:background="@drawable/bg_button"
+        android:textColor="#fff"
+        android:layout_marginTop="3dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

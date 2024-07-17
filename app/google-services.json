@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "381278029959",
+    "firebase_url": "https://tugaskelompok1-c0f80-default-rtdb.firebaseio.com",
+    "project_id": "tugaskelompok1-c0f80",
+    "storage_bucket": "tugaskelompok1-c0f80.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381278029959:android:1535c1a86aeb50d1a35022",
+        "android_client_info": {
+          "package_name": "com.example.konversimatauang"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTebgFyWjZlBHAiPa9qIHJPVCjz_PeXrA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381278029959:android:a91a21cf74359d04a35022",
+        "android_client_info": {
+          "package_name": "com.example.project_kelompok_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTebgFyWjZlBHAiPa9qIHJPVCjz_PeXrA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

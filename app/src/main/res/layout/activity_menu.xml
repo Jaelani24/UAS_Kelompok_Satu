@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".menu">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/icon_project_kelompok"/>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/welcome_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="20sp"/>
+
+
+        <!-- Simulated Card -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/purple_200"
+            android:orientation="vertical"
+            android:padding="140dp">
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/user_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kelompok_satu@gmail.com"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="-120dp"
+            android:layout_marginStart="12dp"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp"
+            android:onClick="menulogout"
+            android:text="Log Out"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_konversi_mata_uang"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:ignore="UnknownId">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="menukonversi"
+            android:scaleType="fitCenter"
+            android:src="@drawable/euro_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Konversi Mata Uang"
+            android:textColor="#6A1B9A"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_list"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_marginStart="211dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginBottom="210dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:ignore="UnknownId">
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            android:onClick="menulist"
+            android:src="@drawable/to_do_list_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="To Do List"
+            android:textColor="#6A1B9A"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_cari_lokasi"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="355dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:ignore="UnknownId">
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="menulokasi"
+            android:scaleType="fitCenter"
+            android:src="@drawable/lokasi_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Cari Lokasi"
+            android:textColor="#6A1B9A"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_kompas"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_marginStart="211dp"
+        android:layout_marginTop="355dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:ignore="UnknownId">
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="menukompas"
+            android:scaleType="fitCenter"
+            android:src="@drawable/kompas_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Kompas"
+            android:textColor="#6A1B9A"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_kamera"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="505dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:ignore="UnknownId">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="menukamera"
+            android:scaleType="fitCenter"
+            android:src="@drawable/kamera_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Kamera"
+            android:textColor="#6A1B9A"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_pengaturan"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_marginStart="211dp"
+        android:layout_marginTop="505dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:ignore="UnknownId">
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            android:onClick="menupengaturan"
+            android:src="@drawable/pengaturan_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Pengaturan"
+            android:textColor="#6A1B9A"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

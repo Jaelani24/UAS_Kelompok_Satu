@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kompas">
+
+    <ImageView
+        android:id="@+id/imgCompass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/img" />
+
+    <TextView
+        android:id="@+id/tvHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heading: 0.00°"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/imgCompass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp"
+        android:onClick="kembalimenu"
+        android:text="Main Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeading"
+        app:layout_constraintVertical_bias="0.362" />
+
+</RelativeLayout>
